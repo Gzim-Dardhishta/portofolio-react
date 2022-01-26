@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
 import './css/header.css';
 
 function Header() {
@@ -11,11 +13,11 @@ function Header() {
 
             <nav>
                 <ul>
-                    <li><a href="#" className='is-active'>Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Experiences</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><Link className='a' to='/'>Home</Link></li>
+                    <li><Link className='a' to='/about'>About</Link></li>
+                    <li><Link className='a' to='/skills'>Skills</Link></li>
+                    <li><Link className='a' to='/experiences'>Experinces</Link></li>
+                    <li><Link className='a' to='/contact'>Contact</Link></li>
                 </ul>
             </nav>
         </header>

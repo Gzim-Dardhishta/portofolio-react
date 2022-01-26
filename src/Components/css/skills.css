@@ -1,0 +1,25 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.languages {
+    display: flex;
+}
+
+.languages img {
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+}
+
+.languages-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.languages-1 img {
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+}

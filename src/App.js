@@ -2,12 +2,38 @@
 import './App.css';
 import Header from './Components/Header';
 import Body from './Components/Body';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Experiences from './Components/Experiences';
+import Contact from './Components/Contact';
+
 
 function App() {
   return (
     <div className='body'>
-      <Header/>
-      <Body/>
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route exact path="/">
+            <Body />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/skills">
+            <Skills />
+          </Route>
+          <Route path="/experiences">
+            <Experiences />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+        
+      </Router>
     </div>
   );
 }
