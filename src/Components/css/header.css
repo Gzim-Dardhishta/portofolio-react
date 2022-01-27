@@ -20,6 +20,9 @@ header {
 .logo h1{
     font-size: 35px;
 }
+.logo h1:hover {
+    color: blueviolet;
+}
 
 nav ul  {
     display: flex;

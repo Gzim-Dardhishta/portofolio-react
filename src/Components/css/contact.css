@@ -1,0 +1,32 @@
+.contact-body {
+    width: 280px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+form input,label,textarea {
+    margin: 3px;
+}
+
+form input {
+    padding: 10px;
+    background-color: rgb(16, 15, 23);
+    border: 1px solid rgb(231, 231, 229);
+    border-radius: 20px;
+}
+
+form textarea {
+    padding: 10px;
+    background-color: rgb(16, 15, 23);
+    border: 1px solid rgb(231, 231, 229);
+    border-radius: 20px;
+}
+

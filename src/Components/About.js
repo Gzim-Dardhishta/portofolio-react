@@ -4,7 +4,7 @@ import './css/about.css';
 
 function About() {
   return (
-    <div className='container'>
+    <div className='wrapper'>
         <h1 className='chat'>hi, <span>ximi</span> here.</h1>
         <h2 className='chat-1'>this is my portofolio, explore</h2>
         <h2 className='title'>I create stuff sometimes.</h2>
