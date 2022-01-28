@@ -60,6 +60,19 @@ main {
     color: rgb(28, 190, 166);
 }
 
+.cv a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cv a:hover {
+    border-bottom: 2px solid rgb(28, 190, 166);
+    padding-bottom: 10px;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 
 .photo img {
     width: 300px;

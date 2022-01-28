@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-
+import cv from '../GzimDardhishta.pdf';
 import './css/body.css'
 import ximi from './img/ximi.jpg';
 
@@ -24,6 +23,10 @@ function Body(props) {
                     <a href="https://github.com/Gzim-Dardhishta"><i class="fab fa-github"></i></a>
                     <a href="https://www.instagram.com/gzimd_/?hl=en"><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <div className="cv">
+                    <a href={cv} download="GzimDardhishta.pdf">Download CV</a>
                 </div>
             </div>
 
