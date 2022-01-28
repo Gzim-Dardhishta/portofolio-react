@@ -3,7 +3,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/header.css';
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+// clode te hambu
+const navLink = document.querySelectorAll(".nav-menu");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
 function Header() {
+
   return (
     <div>
         <header>
@@ -12,12 +33,18 @@ function Header() {
             </div>
 
             <nav>
-                <ul>
-                    <li><Link className='a' activeClassName='is-active' to='/'>Home</Link></li>
-                    <li><Link className='a' activeClassName='is-active' to='/about'>About</Link></li>
+                <ul className='nav-menu'>
+                    <li><Link className='a' to='/'>Home</Link></li>
+                    <li><Link className='a' to='/about'>About</Link></li>
                     <li><Link className='a' to='/experiences'>Experinces</Link></li>
                     <li><Link className='a' to='/contact'>Contact</Link></li>
                 </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header>
     </div>

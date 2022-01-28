@@ -11,7 +11,6 @@ div .snow:hover {
 main {
     background-color: rgb(16, 15, 23);
     color: rgb(231, 231, 229);
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -60,8 +59,11 @@ main {
     color: rgb(28, 190, 166);
 }
 
+.cv {
+    margin: 20px 10px 10px 10px;
+}
+
 .cv a {
-    margin: 10px;
     text-decoration: none;
     font-size: 18px;
 }
@@ -79,4 +81,27 @@ main {
     height: 300px;
     border: 30px solid black;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* main #info {
+        order: 2;
+    }
+    main .photo {
+        order: 1;
+    } */
+    
+    main {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    main #info {
+        margin-bottom: 45px;
+    }
+
+    #info .greeting {
+        width: 30%;
+    }
 }

@@ -29,3 +29,12 @@
 p, .title {
     margin: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 450px;
+    }
+    .chat-1 {
+        width: 50%;
+    }
+}

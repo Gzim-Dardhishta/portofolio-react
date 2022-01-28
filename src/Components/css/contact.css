@@ -27,10 +27,11 @@ form input#message {
     height: 150px;
 }
 
-form textarea {
-    padding: 10px;
-    background-color: rgb(16, 15, 23);
-    border: 1px solid rgb(231, 231, 229);
-    border-radius: 20px;
+#submit:hover {
+    color: rgb(28, 190, 166);
+    cursor: pointer;
 }
+
+
+
 

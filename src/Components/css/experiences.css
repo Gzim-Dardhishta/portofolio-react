@@ -34,3 +34,21 @@ h3, h4 {
 .git-hub i:hover {
     color: rgb(28, 190, 166);
 }
+/* 
+@media only screen and (max-width: 768px) {
+    .main {
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .main-info {
+        width: 80%;
+        margin: auto;
+        margin-left: 100px;
+    }
+    .main-info .text {
+        width: 50%;
+    }
+} */

@@ -13,7 +13,7 @@ function Experiences() {
         </div>
 
         <div className='git-hub'>
-            <a href="https://github.com/Gzim-Dardhishta">
+            <a href="https://github.com/Gzim-Dardhishta" target="_blank">
               <i class="fab fa-github"></i><br/> 
               Github Profile
             </a>
