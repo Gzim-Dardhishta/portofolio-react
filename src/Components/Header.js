@@ -1,26 +1,27 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 import './css/header.css';
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const openCloseMenu = () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+    hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
 
-// clode te hambu
-const navLink = document.querySelectorAll(".nav-menu");
+    // close the hamburger menu
+    const navLink = document.querySelectorAll(".nav-menu");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
 }
 
 function Header() {
@@ -40,7 +41,7 @@ function Header() {
                     <li><Link className='a' to='/contact'>Contact</Link></li>
                 </ul>
 
-                <div class="hamburger">
+                <div class="hamburger" onClick={openCloseMenu}>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
